@@ -1,0 +1,21 @@
+.tableau{
+    border: 1px solid black;
+}
+.blackscreen{
+    background-color: rgba(0, 0, 0, 0.865);
+}
+<thead><tr>
+<th style='border:solid black 2px;background: linear-gradient(black, purple);color: white'>" .$results['id_mat']. "</th>
+<th style='border:solid black 2px;background: linear-gradient(black, purple);color: white'>" .$results['libelle_mat']. "</th>
+<th style='border:solid black 2px;background: linear-gradient(black, purple);color: white'>" .$results['libTypeMat']. "</th>
+</tr></thead><tbody>";
+foreach ($results as $results) {
+echo "
+<tr>
+    <td style='border:solid black 2px;background: linear-gradient(black, purple);color: white'>" .$results['id_mat']. "</td>
+    <td style='border:solid black 2px;background: linear-gradient(black, purple);color: white'>" .$results['libelle_mat']. "</td>
+    <td style='border:solid black 2px;background: linear-gradient(black, purple);color: white'>" .$results['libTypeMat']. "</td>
+</tr>";
+
+}
+echo "<tbody></table>";
